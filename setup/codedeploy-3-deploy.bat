@@ -1,6 +1,6 @@
 aws deploy create-deployment ^
---application-name sandbox ^
+--application-name registy ^
 --deployment-group-name sandbox ^
 --ignore-application-stop-failures ^
---github-location commitId=47a75830b4cb1c407b3a79893592779090595bb3,repository=jkostrowski/aws-codedeploy ^
+--github-location commitId=dc819ae98910b3d1e3cc3ee1cdfa567d0c183bb0,repository=jkostrowski/aws-codedeploy ^
 --description "Ignore ApplicationStop failures"
