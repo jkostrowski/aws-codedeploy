@@ -10,7 +10,7 @@ set :bind, '0.0.0.0'
 
 get '/services' do
   content_type :text
-  [ 'BFM', 'MIP', 'TIR' ].to_json
+  [ 'BFM', 'MIP', 'TIR', 'AIR_SHOP' ].to_json
 end
 
 get '/services/:id' do
