@@ -5,17 +5,20 @@ files:
     destination: /opt/app
 hooks:
   BeforeInstall:
-    - location: scripts/install_dependencies.sh
-      timeout: 300
+    - location: scripts/stop.sh
+      timeout: 120
       runas: root
     - location: scripts/remove.sh
+      timeout: 120
+      runas: root
+    - location: scripts/install_dependencies.sh
       timeout: 300
       runas: root
   ApplicationStart:
     - location: scripts/start.sh
-      timeout: 300
+      timeout: 120
       runas: root
   ApplicationStop:
     - location: scripts/stop.sh
-      timeout: 300
+      timeout: 120
       runas: root

@@ -1,2 +1,2 @@
 #!/bin/sh
-gem install sinatra
+sudo gem install sinatra
