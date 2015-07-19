@@ -1,2 +1,3 @@
 #!/bin/sh
-nohup ruby /opt/app/go.rb
+cd /opt/app
+nohup ruby go.rb
