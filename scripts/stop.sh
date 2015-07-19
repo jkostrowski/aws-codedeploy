@@ -1,3 +1,3 @@
 #!/bin/sh
 
-pkill -f 'ruby.*go\.rb'
+pkill -f 'ruby.*go'
